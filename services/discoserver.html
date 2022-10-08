@@ -597,16 +597,26 @@ text-align: center;
   font-size: 15px;
   font-weight: bold;
 }
+
+.collapsible1 {
+  background-color: yellow;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .content1 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: yellow;
   color: blue;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 #myInput3 {
@@ -883,6 +893,7 @@ text-align: center;
   <li><div><a href="#">Noneb</a>a</div></li>
   <li><div><a href="#">Nonec</a>a</div></li>
 </ul>
+</div>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -934,13 +945,12 @@ function myFunction12() {
 }
 </script>
 </div>
-</div>
 
 <div id="Guilded" class="tabcontent">
 <h1>Guilded</h1>
   <p>Welcome to Guilded section of Discoserver! A place to explore and find a tons of Guilded bots and community server. A place to explore for more communities that you never heard of. </p> 
-  <br>
-  <button type="button" class="collapsible">Servers</button>
+  <br> 
+  <button type="button" class="collapsible1">Servers</button>
 <div class="content1">
 <p>We connect users and server together to form an active community server. A place where users meet a server with the niche they likes or want.</p><br>
 <input type="text" id="myInput3" onkeyup="myFunction13()" placeholder="Search for server name.." title="Type in a name" style="background-color:blue;color:orange;">
@@ -954,15 +964,16 @@ function myFunction12() {
   <button type="button" class="collapsible" style="margin-top:16px;">Bots</button>
 <div class="content1">
 <p>Discover awesome bots developed and programmed by the Guilded community developers. A listing of all cool bots with many amazing commands tools that you could use for your server.</p><br>
-<input type="text" id="myInput4" onkeyup="myFunction14()" placeholder="Search for bots name.." title="Type in a name" style="background:blue;color:orange;">
+<input type="text" id="myInput4" onkeyup="myFunction14()" placeholder="Search for server name.." title="Type in a name" style="background:blue;color:orange;">
 
 <ul id="myUL4">
   <li><div><a href="#">Nonea</a>a</div></li>
   <li><div><a href="#">Noneb</a>a</div></li>
   <li><div><a href="#">Nonec</a>a</div></li>
 </ul>
+</div>
 <script>
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible1");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -1011,7 +1022,6 @@ function myFunction14() {
     }
 }
 </script>
-</div>
 </div>
 
 <div id="Revolt" class="tabcontent">
